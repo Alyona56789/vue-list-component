@@ -1,5 +1,31 @@
-# Vue 3 + Vite
+# Тестовое задание: компонент списка (Vue.js)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Описание
+Реализация списка сотрудников с использованием Vue.js. Данные отображаются из локального JSON-файла (50 записей).
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Технологии
+- Vue 3 (Options API)
+- Vite
+- CSS (Flexbox)
+
+## Как запустить
+1. Установить зависимости:
+   npm install
+
+2. Запустить dev-сервер:
+   npm run dev
+
+3. Открыть в браузере http://localhost:5173
+
+## Структура проекта
+src/
+├── components/ListItem.vue  # Компонент одной карточки
+├── data/users.json          # Данные
+├── App.vue                  # Корневой компонент
+└── main.js
+
+## Особенности реализации
+- Компонент `ListItem` принимает данные через props.
+- Отрисовка списка реализована через директиву `v-for`.
+- Сторонние UI-библиотеки не использовались.
+- Стилизация базовая, без CSS-фреймворков.
